@@ -1,0 +1,5 @@
+function addUser(){
+    userName=document.getElementById("userName").value;
+    virebase.database().ref("/").child(userName).update({ purpose : "adding user" });
+
+}
